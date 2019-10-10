@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Mario Dev</title>
+  <script>
+    /*var marioMamdouh = "It's my name";
+    alert(marioMamdouh);
+    */
+    /*var marioValue = true;
+    alert(typeof marioValue);
+    */
+    /*var x = 3;
+    var y = 4;
+    var resultValue = x + y;
+    alert(resultValue);
+    */
+    function mario() {
+      var age;
+      var result;
+      age = document.getElementById('age').value;
+      result = document.getElementById('result').innerHTML = age;
+      if (age <= 17) {
+        document.getElementById('result').innerHTML = "Too old to vote";
+      }
+      if (age >= 18) {
+        document.getElementById('result').innerHTML = "You have successfully voted";
+      }
+      if (age > 99) {
+        document.getElementById('result').innerHTML = "invalid age";
+      }
+    }
+    function lightmode() {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    }
+    function nightmode() {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    }
+  </script>  
+  <style>
+    p {
+      text-align:center;
+      font-size:15px;
+      color:blue;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    h1 {
+      text-align:center;
+      color:red;
+      font-size:2em;
+      margin:18px;
+    }
+    h3 {
+      text-align:center;
+      color:purple;
+    }
+    a {
+      text-decoration:none;
+      color:#800040;
+    }
+    input[type=number] {
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      padding:20px;
+      width:20%;
+      border-style:double;
+      border-size:10px;
+    }
+    #resultbtn {
+      margin-right:auto;
+      margin-left:auto;
+      display:block;
+      width:15%;
+      height:40px;
+      font-size:20px;
+      color:black;
+      background-color:lightgreen;
+      border-stlye:solid;
+      border-color:green;
+    }
+    #resultbtn:hover {
+      color:black;
+      background-color:green;
+    }
+    #lightmodecss {
+      color:black;
+      background-color:white;
+      font-size:20px;
+      padding:10px;
+      border-style:solid;
+      border-color:black;
+    }
+    #nightmodecss {
+      color:white;
+      font-size:20px;
+      background-color:black;
+      padding:10px;
+      border-style:solid;
+      border-color:white;
+    }
+    footer {
+      border-style:solid;
+      border-color:#800040;
+      padding:10px;
+    }
+    #dmario:hover {
+      color:red;
+    }
+  </style>
+</head>
+<body style="width:80%;margin-right:auto;margin-left:auto;display:block;padding:12px;">
+<header style="margin-right:auto;margin-left:auto;display:block;border-bottom-style:none;border-top-style:solid;border-left-style:solid;border-right-style:solid;border-color:#800040;padding:20px;">
+  <h1>mariomamdouh.net</h1>
+  <h3>Web Development</h3>
+  <nav style="font-size:2em;word-spacing:2em;text-align:center;">
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">Register</a>
+  </nav>
+</header>
+   
+<section style="border-right-style:solid;border-left-style:solid;border-top-style:solid;border-bottom-style:none;border-color:#800040;padding:10px;">
+  <div id="votearea">
+    <h3>I'm testing this fucking code</h3>
+    <p>Enter your age in here<p>
+    <input type="number" id="age" placeholder="Enter your age" required>
+    <p id="result"></p>
+    <button id="resultbtn" onclick="mario()">Result</button>
+    <p><button id="lightmodecss" onclick="lightmode()">Light Mode</button> <button id="nightmodecss" onclick="nightmode()">Night Mode</button></p>
+  </div>    
+</section>
+
+<footer style="text-align:center;">
+  <h4>No Copyright --Web Development test--</h4>
+  <h5>Designed and tested by <i id="dmario">Mario<i></h5>
+</footer>
+</body>
+</html>
